@@ -53,6 +53,11 @@ public final class EnchantmentRegistry {
                 put("vanishing_curse", Enchantment.getByName("VANISHING_CURSE"));
             }
 
+            /* 1.11.1 Enchantments */
+            if (isEqualOrNewerThan(MC_1_11_1)) {
+                put("sweeping", Enchantment.getByName("SWEEPING_EDGE"));
+            }
+
             /* 1.13 Enchantments */
             if (isEqualOrNewerThan(MC_1_13)) {
                 put("channeling", Enchantment.getByName("CHANNELING"));
